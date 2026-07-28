@@ -2,6 +2,29 @@
 
 这是一个面向审计实习场景的本地提效工具。项目聚焦客户资料文件名混乱、资料分类不统一、底稿描述整理耗时的问题，支持上传资料后生成标准化命名、分类路径和人工复核提示。
 
+## 产品预览
+
+<table>
+  <tr>
+    <td width="33%"><img src="docs/images/readme-archive.png" alt="资料智能归档"></td>
+    <td width="33%"><img src="docs/images/readme-excel-check.png" alt="Excel 明细异常检查"></td>
+    <td width="33%"><img src="docs/images/readme-workpaper.png" alt="访谈与底稿描述生成"></td>
+  </tr>
+  <tr>
+    <td align="center">资料命名与归档</td>
+    <td align="center">Excel 异常检查</td>
+    <td align="center">底稿描述生成</td>
+  </tr>
+</table>
+
+## 使用流程
+
+1. 上传客户资料，或直接加载内置脱敏样例。
+2. 系统抽取文件类型、交易对方、日期、金额和单据编号。
+3. 根据审计循环生成建议文件名、归档路径、置信度和复核提示。
+4. 人工确认后导出归档建议 Excel；原始文件不会被自动修改或移动。
+5. 对明细表执行异常检查，或把访谈记录整理为底稿描述框架。
+
 ## 项目亮点
 
 - 用 Streamlit 搭建可演示的审计资料整理工作台。
